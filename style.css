@@ -1,0 +1,8 @@
+input:focus{
+    box-shadow: none !important;
+}
+
+h5{
+    display: inline !important;
+    padding-right: 20px;
+}

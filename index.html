@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container-fluid col-7 mx-auto mt-3 ">
+        <div class="d-flex mx-auto">
+            <div class="form-floating">
+                <input type="number" name="" id="row" class="form-control " >
+                <label for="row">input the cols</label>
+            </div>
+            <div class="col-1"></div>
+            <div class="form-floating">
+                <input type="number" name="" id="col"  class="form-control" >
+                <label for="row">input the rows</label>
+            </div>
+            <div class="col-1"></div>
+
+            <select name="" id="mySelect" class="rounded-3" onchange="handleSelectChange ()">
+                <option value="option1">Multiply</option>
+                <option value="option2">subtract</option>
+                <option value="option3">Add</option>
+                <option value="option4">Division</option>
+
+            </select>
+            <div class="col-1"></div>
+            <button class="btn btn-dark w-50" onclick="btn()">make a table</button>
+        </div>
+    </div>
+    <div class="show container-fluid">
+        <div class="d-auto" id="show">
+
+        </div>
+    </div>
+<div id="loopResults"class="mt-5 ms-2"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
